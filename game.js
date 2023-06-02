@@ -4,6 +4,7 @@ class Title extends Phaser.Scene {
     }
     preload() {
         this.load.image('hand', 'assets/select.png');
+        this.load.image('rolypoly', 'assets/rolypolySprite.png');
     }
     create(){
         this.w = this.game.config.width;
@@ -31,7 +32,7 @@ class Title extends Phaser.Scene {
             repeat: -1,
         })
 
-        let rp = this.add.ellipse(this.w/2, this.h * 0.6, 200, 100, 0x00ff00).setOrigin(0.5);
+        let rp = this.add.image(this.w/2, this.h * 0.6, 'rolypoly').setOrigin(0.5);
         
     }
     update(){
