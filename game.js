@@ -5,6 +5,8 @@ class Title extends Phaser.Scene {
     preload() {
         this.load.image('hand', 'assets/select.png');
         this.load.image('rolypoly', 'assets/rolypolySprite.png');
+        this.load.image('snail', 'assets/snailSprite.png');
+        this.
     }
     create(){
         this.w = this.game.config.width;
@@ -32,7 +34,8 @@ class Title extends Phaser.Scene {
             repeat: -1,
         })
 
-        let rp = this.add.image(this.w/2, this.h * 0.6, 'rolypoly').setOrigin(0.5);
+        let rp = this.add.image(this.w/2, this.h * 0.4, 'rolypoly')
+        let snail = this.add.image(this.w/2, this.h * 0.6, 'snail')
         
     }
     update(){
